@@ -33,11 +33,21 @@ echo json_encode($usuarios); */
 //$usuario->login("FERNANDO","22061985");
 //echo $usuario;
 
-$aluno = new Usuario();
- $aluno->setDeslogin("gabriel");
- $aluno->setDessenha("26062008");
+//criando um novo usuario
+//$aluno = new Usuario();
+ //$aluno->setDeslogin("gabriel");
+ //$aluno->setDessenha("26062008");
 
- $aluno ->insert();
+ //$aluno ->insert();
 
- echo $aluno;
+ //echo $aluno;
+
+ $usuario = new Usuario();
+
+ $usuario->loadById(1);
+ $usuario->update("joel","13121962");
+
+ echo $usuario;
+
+
 ?>
