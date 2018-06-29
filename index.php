@@ -41,11 +41,19 @@ echo json_encode($usuarios); */
  //$aluno ->insert();
 
  //echo $aluno;
+// altera dados de um usuario
+ //$usuario = new Usuario();
+
+ //$usuario->loadById(1);
+// $usuario->update("joel","13121962");
+
+ //echo $usuario;
 
  $usuario = new Usuario();
 
  $usuario->loadById(1);
- $usuario->update("joel","13121962");
+
+ $usuario->delete();
 
  echo $usuario;
 
